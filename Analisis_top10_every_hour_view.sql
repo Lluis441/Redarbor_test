@@ -1,5 +1,4 @@
 
---CREATE VIEW [dbo].[data_redarbor_test_top_source_each_time] as
 
 WITH times_min_max AS (
     SELECT 

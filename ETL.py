@@ -57,7 +57,7 @@ for tabla, csv in zip(nombres_tabla, csv_files):
 
     # Optimización para inserciones en bloque
     cursor.fast_executemany = True
-    cursor.executemany(insert_query, df.values.tolist())
+    cursor.executemany(insert_query, df_clean.values.tolist())
     
     print(f"ETL process completed for: {csv}")
 
